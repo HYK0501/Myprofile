@@ -6,10 +6,10 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches:
-      - main
+      - devlope
   pull_request:
     branches:
-      - main
+      - devlope
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -36,5 +36,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # Settings > Secret 建立的 ACCESS_TOKEN，推同個 repo 的話可以不需要
-          BRANCH: gh-pages # deploy 到 gh-pages 這個分支
+          BRANCH: msater # deploy 到 gh-pages 這個分支
           FOLDER: dist # build 後的資料夾
