@@ -1,6 +1,6 @@
 <template>
   <div class="Footer">
-    <div class="welcome"> Welcome to contact : codpropm@gmail </div>
+    <div class="welcome"> Welcome to contact : codpropm@gmail.com </div>
     <div class="icons">
         <img class="icon" src="@/assets/facebook.png" @click="jump('https://www.facebook.com/profile.php?id=100000541754710')">
         <img class="icon" src="@/assets/github.png" @click="jump('https://github.com/HYK0501')">
