@@ -65,7 +65,7 @@ export default defineComponent({
 </script>
 
 
-<style>
+<style  lang="scss" scoped >
   .root{
     margin: 0;
   }
@@ -113,13 +113,19 @@ export default defineComponent({
   }
 
 @media screen and (max-width: 1000px) {
+  .space{
+    margin: 0;
+    background-color: #F4F3EA;
+    height : 3vw;
+  }
     .aboutMeContainer {
     background-color: #F4F3EA;
     justify-content: center;
+    align-items: center; 
     margin : 0;
     .avatar {
-      width : 210px; 
-      height: 300px;
+      width : 45%; 
+      height: 70%;
       margin-right : 5vw;
       margin-top : 1vw;
       margin-bottom : 1vw;
@@ -149,5 +155,5 @@ export default defineComponent({
     margin-bottom : 0;
   }
 }
-  
+
 </style>

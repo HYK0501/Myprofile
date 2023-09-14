@@ -50,7 +50,7 @@ export default defineComponent({
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style  lang="scss" scoped>
 *{
   padding: 0;
   margin: 0;
@@ -92,7 +92,7 @@ export default defineComponent({
       background-color: #D3AC2B;
       position: fixed;
       top: 0;
-      height : 30px;
+      height : 5%;
       width: 100%;
       z-index:10;
       .navicon {

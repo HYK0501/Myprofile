@@ -53,7 +53,7 @@ export default defineComponent({
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style  lang="scss" scoped >
     .root{
         background-color: #F4F3EA;
         margin-top : 0;
@@ -94,22 +94,33 @@ export default defineComponent({
         margin-top : 0;
         margin-bottom: 0;
         .SideProjectContainer {
+            display : block;
             text-align:left;
-            padding-left :  1.5vw;
             padding-top :  1.5vw;
             padding-bottom :  1.5vw;
             justify-content: center;
-            display : flex;
             .image{
-                width : 400px;
-                
+                width : 98%;
             }
             .texts{
                 display : block;
-                text-align:left;
-                width : 400px;
+                text-align: left;
+                width : 90%;
+                .skillList {
+                    display : flex;
+                    flex-wrap: wrap;
+                    .skill {
+                        border-radius: 10%;
+                        padding : 0.1vw; 
+                        background : #CBD0D8;
+                        margin-right: 1vw;
+                        margin-left: 1vw;
+                    }
+                }
             }
         }
     }
 }
+
+
 </style>

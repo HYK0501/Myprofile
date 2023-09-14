@@ -26,21 +26,22 @@ export default defineComponent({
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style  lang="scss" scoped >
     .Footer{
-        font-size: 30px;
+        font-size: 20%;
         background : #CBD0D8;
         display : flex;
         justify-content: center;
         align-items: center; 
         .welcome{
-            margin: 1vw; 
+          width: 800px;
+          margin : 1%; 
         }
         .icons {
             .icon{
-            margin-top : 1vw;
-            margin-right : 2vw;
-            width : 3vw;
+              margin-top : 1vw;
+              margin-right : 5%;
+              width : 10%;
             }
         }
     }

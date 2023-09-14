@@ -42,7 +42,7 @@ export default defineComponent({
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style  lang="scss" scoped>
     .root{
         background-color: #F4F3EA;
         margin-top : 0;

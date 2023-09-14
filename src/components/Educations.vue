@@ -44,7 +44,7 @@ export default defineComponent({
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>   
+<style  lang="scss" scoped >   
 .root{
  background-color: #F4F3EA;
  margin-top : 0;
@@ -77,13 +77,13 @@ export default defineComponent({
       padding-bottom : 20px;
       padding-top : 20px;
         .icon{
-          width : 200px;
+          width : 40%;
         }
         .texts{
             margin-left : 3vw;
             display : block;
             text-align:left;
-            width : 400px;
+            width : 50%;
         }
   } 
 }

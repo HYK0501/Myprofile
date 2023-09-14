@@ -41,7 +41,7 @@ export default defineComponent({
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style  lang="scss" scoped >
 .SkillsContainer {
     text-align:left;
     background-color: #F4F3EA;
