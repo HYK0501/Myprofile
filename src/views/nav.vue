@@ -18,7 +18,7 @@ export default defineComponent({
   },
   data() {
     return { 
-        Ids : [ "Home" , "Educations" , "WorkExperience" , "SideProject"]
+        Ids : [ "Home" , "Educations" , "WorkExperience" , "Projects"]
     }
   },
   methods: {

@@ -15,40 +15,20 @@
           <img class="icon" src="@/assets/1384014.png" @click="jump('https://www.linkedin.com/in/%E8%98%85-%E4%BD%91-%E9%AB%98-28b493235/')">
         </div>
       </div>
-
-      <div class="SkillsContainer">
-        <h1> Skills </h1>
-        <ul>
-          <li >Programming Language : 
-            <ul>
-              <li> Java </li>
-              <li> JavaScript </li>
-              <li> Python </li>
-              <li> C++ </li>
-            </ul> 
-          </li>
-          <li >Other Develope Tool : 
-            <ul>
-              <li> GCP : Cloud Engine , Cloud Runs , Cloud Tasks , Cloud Functions </li>
-              <li> AWS : EC2 , S3 , Lambda , ECR , ECS , Cognito   </li>
-              <li> Backend framwork : JavaEE , Flask </li>
-              <li> Frontend framwork : React Native , Vue</li>
-            </ul> 
-          </li>
-          <li >Language :
-            <ul>
-              <li>Chinese (native) </li>
-              <li>English  </li>
-            </ul> 
-          </li>
-        </ul>
+      <div class="Skills">
+        <h1 class="text"> Skills </h1>
+        <Skills />
       </div>
+    </div>
+    <div class="SkillRWD">
+       <Title title="Skills" id="Skills"/>
+       <Skills />
     </div>
     <Title title="Educations" id="Educations"/>
     <Educations />
     <Title title="Work Experience" id="WorkExperience" />
     <WorkExperiences />
-    <Title title="Side Projects" id="SideProject"/>
+    <Title title="Projects" id="Projects"/>
   </div>
   
 </template>
@@ -58,12 +38,14 @@ import { defineComponent, PropType } from "vue";
 import  Title  from "@/components/Title.vue";
 import  Educations from "@/components/Educations.vue";
 import  WorkExperiences from "@/components/WorkExperiences.vue";
+import  Skills from "@/components/Skills.vue";
 export default defineComponent({
   name: "HomeView",
   components: {
     Title,
     Educations,
     WorkExperiences,
+    Skills,
   },
   
   methods: {
@@ -106,7 +88,6 @@ export default defineComponent({
       width : 30vw;
       .icons {
         display: flex;
-        
         .icon{
           margin-top : 1vw;
           margin-right : 2vw;
@@ -114,17 +95,19 @@ export default defineComponent({
         }
       }
     }
-    .SkillsContainer {
-      text-align:left;
-      width : 30vw;
-      margin-left:3vw;
-      .icon{
-          width : 1.5vw;
-        }
+    .Skills{
+      display : block;
+      .text{
+        width : 1vw;
+        padding-left : 3.5vw;
+      }
     }
   }
+  .SkillRWD{
+    display : None;
+  }
 
-  @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .aboutMeContainer {
     background-color: #F4F3EA;
     justify-content: center;
@@ -152,11 +135,14 @@ export default defineComponent({
         }
       }
     }
-    .SkillsContainer {
+    .Skills{
       display : None;
     }
   }
-
+  .SkillRWD{
+    display : block;
+    margin-bottom : 0;
   }
+}
   
 </style>
