@@ -27,7 +27,26 @@ export default defineComponent({
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  lang="scss" scoped >
-    .Footer{
+  .Footer{
+        font-size: 30px;
+        background : #CBD0D8;
+        display : flex;
+        justify-content: center;
+        align-items: center; 
+        .welcome{
+            margin: 1vw; 
+        }
+        .icons {
+            .icon{
+            margin-top : 1vw;
+            margin-right : 2vw;
+            width : 3vw;
+            }
+        }
+    }
+  
+@media screen and (max-width: 1000px) {
+  .Footer{
         font-size: 20%;
         background : #CBD0D8;
         display : flex;
@@ -45,5 +64,5 @@ export default defineComponent({
             }
         }
     }
-   
+}
 </style>
