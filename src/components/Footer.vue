@@ -6,6 +6,7 @@
         <img class="icon" src="@/assets/github.png" @click="jump('https://github.com/HYK0501')">
         <img class="icon" src="@/assets/1384014.png" @click="jump('https://www.linkedin.com/in/%E8%98%85-%E4%BD%91-%E9%AB%98-28b493235/')">
     </div>
+    <div class="author"> © by Heng-Yu Kao </div>
   </div>
 </template>
 
@@ -27,41 +28,48 @@ export default defineComponent({
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  lang="scss" scoped >
-  .Footer{
+
+.Footer{
         font-size: 30px;
+        display : block;
         background : #CBD0D8;
-        display : flex;
-        justify-content: center;
-        align-items: center; 
+         
         .welcome{
-            margin: 1vw; 
+          text-align: center;
         }
         .icons {
+          margin : 1vw auto;
+          justify-content: center;
+          display : flex;
             .icon{
-            margin-top : 1vw;
-            margin-right : 2vw;
-            width : 3vw;
+              margin-right : 2vw;
+              width : 3vw;
             }
         }
+        .author{
+          text-align: center;
+        }
     }
-  
 @media screen and (max-width: 1000px) {
   .Footer{
         font-size: 20%;
+        display : block;
         background : #CBD0D8;
-        display : flex;
-        justify-content: center;
-        align-items: center; 
+         
         .welcome{
-          width: 800px;
-          margin : 1%; 
+          text-align: center;
         }
         .icons {
+          margin : 1vw auto;
+          justify-content: center;
+          display : flex;
             .icon{
-              margin-top : 1vw;
               margin-right : 5%;
-              width : 10%;
+              width : 5%;
             }
+        }
+        .author{
+          text-align: center;
         }
     }
 }
