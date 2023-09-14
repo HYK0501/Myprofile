@@ -29,6 +29,8 @@
     <Title title="Work Experience" id="WorkExperience" />
     <WorkExperiences />
     <Title title="Projects" id="Projects"/>
+    <SideProject />
+    <Footer />
   </div>
   
 </template>
@@ -39,13 +41,17 @@ import  Title  from "@/components/Title.vue";
 import  Educations from "@/components/Educations.vue";
 import  WorkExperiences from "@/components/WorkExperiences.vue";
 import  Skills from "@/components/Skills.vue";
+import  SideProject from "@/components/SideProject.vue";
+import  Footer from "@/components/Footer.vue";
 export default defineComponent({
   name: "HomeView",
   components: {
     Title,
+    Skills,
     Educations,
     WorkExperiences,
-    Skills,
+    SideProject,
+    Footer,
   },
   
   methods: {
@@ -53,7 +59,6 @@ export default defineComponent({
       //console.log(link)
       window.open( link,'_blank' );
     },
-    
   },
 })
 
